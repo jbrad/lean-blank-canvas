@@ -1,0 +1,19 @@
+{
+  "name": "lean-blank-canvas",
+  "version": "1.0.0",
+  "description": "Blank Canvas child theme for Lean Theme",
+  "main": "style.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbrad/lean-blank-canvas.git"
+  },
+  "author": "Jason Bradley",
+  "bugs": {
+    "url": "https://github.com/jbrad/lean-blank-canvas/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-sass": "~0.7.2",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}
