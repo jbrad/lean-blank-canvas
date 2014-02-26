@@ -1,0 +1,64 @@
+// Start Variables
+
+//Colors
+$white: #fff;
+$white_stone: #f5f5f5;
+$black: #000;
+$gray: #666;
+$gray_light: #555;
+$gray_lighter: #999;
+$gray_dark: #333;
+$blue: #3088ff;
+$red: red;
+
+// Body
+$body_background_color: $white;
+$body_content_color: $gray_light;
+$link_color: $blue;
+$link_color_hover: $red;
+
+//Menu Above Header
+$menu_above_menu_item_color: $gray_lighter;
+$menu_above_menu_item_color_hover: $menu_above_menu_item_color;
+$menu_above_menu_item_background_color_hover: $gray_light;
+$menu_above_menu_item_color_active: $black;
+$menu_above_menu_item_background_color_active: $body_background_color;
+
+//Menu Under Header
+$menu_under_background_color: #f0f0f0;
+
+$menu_under_menu_item_color: $gray;
+$menu_under_menu_item_color_hover: $blue;
+$menu_under_menu_item_background_color_hover: darken($menu_under_background_color, 5%);
+$menu_under_menu_item_color_active: $blue;
+$menu_under_menu_item_background_color_active: darken($menu_under_background_color, 5%);
+
+$menu_under_btn_bar_span_color: $gray;
+
+//Post
+$post_title_color: $gray_dark;
+$post_title_color_hover: $post_title_color;
+$post_meta_color: $gray_lighter;
+$post_meta_link_color: $post_meta_color;
+$post_meta_link_color_hover: $red;
+
+//Widgets
+$widget_header_color: $gray_light;
+$widget_link_color: $blue;
+$widget_link_color_hover: $red;
+
+//Footer
+$footer_link_color: $blue;
+$footer_link_color_hover: $red;
+$credit_color: $gray_lighter;
+$credit_link_color: $footer_link_color;
+$credit_link_color_hover: $footer_link_color_hover;
+
+//Misc
+$border_color: #e6e6e6;
+
+//Font
+$font_family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font_weight_light: 300;
+
+// End Variables
