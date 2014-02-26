@@ -11,32 +11,11 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Template: lean
 */
 
-/* Import Standard Styles
----------------------------------------------------------------------------------- */
+// Import Standard Styles
 
-/* To use child theme on your site */
-/* Comment out this line below */
 @import url( '../lean/style.css' );
-/* And uncomment this line below */
-/* @import url( '../standard/style.css' ); */
-
-/* uncomment the line below to enable child theme right-to-left language support */
-/* @import url( '../standard/rtl.css' ); */
-
-
-/* Customizations
----------------------------------------------------------------------------------- */
-
-// LESS file structure
-// 1. Variables - you should only have to modify these to make customization changes
-// 2. CSS Customizations - these are the actually CSS customizations that modify the parent theme layout and styling
-// 3. Mixins - these are helper "functions" for CSS styles, don't suggest making changes
-// Note: Any comments that start with "//" will not show up in your style.css file when you compile this style.less file
-
 @import "variables";
 @import "mixins";
-
-// Start CSS Customizations
 
 // Body
 
@@ -139,7 +118,8 @@ a {
     padding: 25px 0;
 }
 
-#site-title, #site-title a {
+#site-title,
+#site-title a {
     margin-bottom: 5px;
     font-size: 40px;
 
@@ -167,10 +147,6 @@ a {
     }
 }
 
-.post, #comments, #pings, #no-comments, #respond {
-    @include no-shadow();
-}
-
 .post-title a,
 .post-title a:visited {
     color: $post_title_color;
@@ -182,13 +158,21 @@ a {
     }
 }
 
-.post .entry-content, .post .entry-summary {
-    padding: 0px;
-}
+.post  {
+    .entry-content,
+    .entry-summary {
+        padding: 0px;
 
-.page {
-    .post .entry-content, .post .entry-summary {
-        padding: 0px 20px;
+        .page & {
+            padding: 0px 20px;
+        }
+    }
+
+    p {
+        color: $body_content_color;
+        font-family: $font_family;
+        font-weight: $font_weight_light;
+        font-size: 14px;
     }
 }
 
@@ -201,15 +185,6 @@ a {
     -ms-transform: rotate(30deg);
     -o-transform: rotate(30deg);
     transform: rotate(30deg);
-}
-
-.post {
-    p {
-        color: $body_content_color;
-        font-family: $font_family;
-        font-weight: $font_weight_light;
-        font-size: 14px;
-    }
 }
 
 .post-header {
@@ -231,10 +206,6 @@ a {
     }
 }
 
-.thumbnail.alignleft {
-    margin: 0 20px 0px 0;
-}
-
 .post-meta {
     border-top: none;
     font-weight: $font_weight_light;
@@ -246,6 +217,10 @@ a {
             padding-left: 6px;
         }
     }
+}
+
+.thumbnail.alignleft {
+    margin: 0 20px 0px 0;
 }
 
 .breadcrumb {
@@ -269,6 +244,20 @@ a {
 .post.format-link .the-comment-link,
 .post.format-quote .the-comment-link {
     float: none;
+}
+
+.format-link {
+
+    .post-header {
+        background: $white;
+        color: #333;
+    }
+
+    .post-title,
+    .post-title a,
+    .post-title a:visited {
+        color: $post_title_color;
+    }
 }
 
 // Sidebar
