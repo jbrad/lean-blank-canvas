@@ -4,7 +4,7 @@
 
 This is a custom child theme kit for [Lean](http://leantheme.co), crafted by [Jason Bradley](http://jasonbradley.me).
 
-The [Lean Lean Blank Canvas](https://github.com/jbrad/lean-blank-canvas) requires Lean Theme.
+The [Lean Blank Canvas](https://github.com/jbrad/lean-blank-canvas) requires Lean Theme.
 
 ## Installation
 
